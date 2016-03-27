@@ -17,7 +17,11 @@ Download this repo:
 	git clone https://github.com/knowlet/hma-proxylist-scraper.git
 	cd hma-proxylist-scraper
 
-### Run
+### Run once
+
+	phantomjs main.js
+	
+### Run evey half an hour
 
 	bash loop.sh
 
