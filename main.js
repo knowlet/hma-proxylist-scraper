@@ -20,11 +20,13 @@ page.open(url, function(status) {
             var ip = selection.toString().trim();
             var port = $(e).children().eq(2).text().trim();
             var protocol = $(e).children().eq(6).text().trim();
-            _list.push({
-               'ip': ip,
-               'port': port,
-               'protocol': protocol
-            });
+            if (ip !== "") {
+                _list.push({
+                   'ip': ip,
+                   'port': port,
+                   'protocol': protocol
+                });
+            }
         });
         return _list;
     });
